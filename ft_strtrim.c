@@ -6,7 +6,7 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 21:46:43 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/13 20:25:11 by ialee            ###   ########.fr       */
+/*   Updated: 2024/11/12 22:09:36 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,18 +21,16 @@
 char	*ft_strtrim(const char *str, const char *set)
 {
 	char	*ptr;
-	long	str_len;
+	size_t	str_len;
 
 	str_len = ft_strlen(str);
-	while (ft_strchr(set, str[str_len - 1]) && str_len > 0)
+	while (ft_strchr(set, str[str_len - 1]))
 		str_len--;
-	while (ft_strchr(set, *str) && *str && str_len > 0)
+	while (ft_strchr(set, *str))
 	{
 		str++;
 		str_len--;
 	}
-	if (str_len < 0)
-		return (NULL);
 	ptr = malloc(str_len + 1);
 	if (!ptr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 18:02:47 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/14 13:31:35 by ialee            ###   ########.fr       */
+/*   Updated: 2024/11/12 22:21:58 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ char	*ft_strnstr(const char *str1, const char *str2, size_t len)
 	{
 		if (ft_strncmp(str1++, str2, s2_len) == 0)
 			return ((char *)--str1);
-		if (!*str1)
-			return (NULL);
 		if (len < s2_len)
 			return (NULL);
 	}

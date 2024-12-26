@@ -6,11 +6,13 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 11:14:13 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/14 14:39:33 by ialee            ###   ########.fr       */
+/*   Updated: 2024/11/12 21:59:48 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
+#include <stdio.h>
 
 /// This is used to count the number of words there are 
 /// inside of `str`.
@@ -19,18 +21,19 @@ static size_t	ft_strwrdc(const char *str, char c)
 	size_t	len;
 	int		is_word;
 
-	len = 0;
-	is_word = 0;
+	len = 1;
+	is_word = 1;
+	if (*str == c)
+		is_word = 0;
 	while (*str)
 	{
-		if (*str == c && is_word)
-			is_word = 0;
-		else if (*str != c && !is_word)
+		if (*str++ == c && is_word)
 		{
-			is_word = 1;
 			len++;
+			is_word = 0;
 		}
-		str++;
+		else
+			is_word = 1;
 	}
 	return (len);
 }
@@ -54,11 +57,11 @@ static void	*ft_strappend(char **str, char *new_str, size_t index)
 /// and `result`
 static void	**ft_initialize(char ***result, size_t size, size_t *index)
 {
-	*result = malloc(size * sizeof(char *));
-	if (!*result)
+	*result = malloc(sizeof(char *) * size);
+	if (!result)
 		return (NULL);
 	*index = 0;
-	return ((void **)*result);
+	return ((void *)*result);
 }
 
 /// Splits a string by `c` and returns an array of `char *`

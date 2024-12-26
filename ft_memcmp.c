@@ -6,11 +6,11 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 17:58:07 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/14 14:40:41 by ialee            ###   ########.fr       */
+/*   Updated: 2024/11/12 21:51:14 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stddef.h>
 
 /// Compares `n` bytes between memory buffers `s1` and `s2` returning
 /// 0 if there is no byte-to-byte difference.

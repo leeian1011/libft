@@ -6,11 +6,12 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 10:22:14 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/14 14:41:00 by ialee            ###   ########.fr       */
+/*   Updated: 2024/11/12 22:40:37 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 /// Gets the number of 'places' in `num`.
 /// E.g:

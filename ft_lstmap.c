@@ -6,7 +6,7 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 20:28:47 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/12 23:22:57 by ialee            ###   ########.fr       */
+/*   Updated: 2024/11/12 22:12:26 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*fn)(void *), void (*del_fn)(void *))
 	t_list	*new_node;
 	t_list	*new_lst;
 
-	new_lst = NULL;
 	while (lst)
 	{
 		new_node = ft_lstnew(fn(lst->content));

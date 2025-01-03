@@ -128,4 +128,13 @@ void	fmtint_flag_util(t_fmt *fmt, size_t *idx, long width_len, long arg_len);
 int		handle_specifiers(const char **str, va_list *v_arg);
 
 int		ft_printf(const char *str, ...);
+
+// get_next_line prototypes
+#  define BUFFER_SIZE 1024
+
+// String parsing utils
+char	*ft_strtonl(char *str);
+char	*ft_strchrnl(char *str);
+
+char	*get_next_line(int fd);
 #endif

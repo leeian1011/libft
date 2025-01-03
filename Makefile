@@ -2,7 +2,7 @@ NAME = libft.a
 SOURCE= \
 		 		ft_strjoin.c ft_strnstr.c ft_strdup.c ft_putstr_fd.c ft_memcpy.c ft_memmove.c ft_strlen.c ft_strlcat.c \
 				ft_bzero.c ft_atoi.c ft_strrchr.c ft_striteri.c ft_toupper.c ft_memcmp.c ft_split.c ft_itoa.c ft_strncmp.c \
-				ft_memset.c ft_substr.c ft_strchr.c  ft_strtrim.c ft_isdigit.c ft_isalpha.c ft_calloc.c \
+				ft_memset.c ft_substr.c ft_strchr.c  ft_strtrim.c ft_isdigit.c ft_isalpha.c ft_calloc.c ft_atol.c \
 				ft_isascii.c ft_isalnum.c ft_isprint.c ft_strmapi.c ft_putnbr_fd.c ft_strlcpy.c ft_memchr.c ft_putendl_fd.c \
 				ft_putchar_fd.c ft_tolower.c ft_printf.c ft_fmthex.c ft_fmtstr.c ft_fmtptr.c ft_fmtint.c ft_fmt.c ft_ltoa.c \
 				ft_printf_handler.c ft_fmt_utils.c

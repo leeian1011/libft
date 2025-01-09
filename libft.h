@@ -6,7 +6,7 @@
 /*   By: ialee <ialee@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/05 09:15:22 by ialee             #+#    #+#             */
-/*   Updated: 2024/11/12 22:04:19 by ialee            ###   ########.fr       */
+/*   Updated: 2025/01/09 17:02:54 by ialee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		ft_tolower(char c);
 
 // string operations
 int		ft_atoi(const char *num);
+long	ft_atol(const char *num);
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t len);
 size_t	ft_strlcat(char *dest, const char *src, size_t len);
